@@ -1,4 +1,5 @@
 #coding: utf-8
+from .utils import reciever
 from django.conf import settings
 from .utils.queue import store
 from django.utils.functional import curry
