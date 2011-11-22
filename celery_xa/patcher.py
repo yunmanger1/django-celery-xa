@@ -6,7 +6,7 @@ from django.db import transaction
 
 def wrap_func(func):
     old_func = func
-    def new_func(*args, **kwargs):        
+    def new_func(*args, **kwargs):
         if settings.BROKER_TRANSPORT == "django" or not transaction.is_managed():
             # если используется db транспорт или мы не под транзакцией, то нам это не нужно.
             # все работает по старому 
