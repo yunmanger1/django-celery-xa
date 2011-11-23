@@ -1,3 +1,4 @@
 *.pyc
 .pydevproject
 .settings/*
+django_celery_xa.egg-info
